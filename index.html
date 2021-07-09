@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>petite-vue voting</title>
+  </head>
+  <body>
+    <h1>petite-vue</h1>
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+    <div v-scope="{ upVotes: 0, downVotes: 0 }">
+      <p>
+        {{ upVotes }} <button @click="upVotes++">&#128077;</button>
+      </p>
+      <p>
+        {{ downVotes }} <button @click="downVotes++">	&#128078;</button>
+      </p>
+    </div>
+  </body>
+</html>
